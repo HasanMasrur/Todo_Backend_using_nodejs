@@ -21,11 +21,9 @@ try{
         }
     });
 }catch(err){
-console.log(err);
+console.log(err)
 }
-
 });
-;
 
 //Post A TODO
 router.post("/",async(req,res)=>{
@@ -70,14 +68,11 @@ router.put("/:id",async(req,res)=>{
                 console.log(req.params.id);
                
                 res.status(200).json({message:
-                "Todo was updated successfully"});
-              
+                "Todo was updated successfully"});  
             }
         }
-        );
-      
+        );  
     
    }catch(err){}
-   
 });
 module.exports = router ;
